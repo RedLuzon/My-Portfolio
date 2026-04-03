@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mind Reader - Number Guessing Game</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../CSS-FILE/start_page.css">
+</head>
+
+<!-- bacground element COFFETI-->
+    <div class="bg-mesh"></div>
+    <div class="floating-orb orb-1"></div>
+    <div class="floating-orb orb-2"></div>
+    <div class="floating-orb orb-3"></div>
+    <canvas id="confetti-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fa-solid fa-brain brand-icon"></i>
+            <span class="brand-text">Mind<span class="brand-highlight">Reader</span></span>
+        </div>
+        <button onclick="showSection('landing')" id="nav-home" class="nav-back hidden">
+            <i class="fa-solid fa-arrow-left"></i>Back to Home
+        </button>
+    </nav>
+
+<!-- main container -->
+    <main class="main-container">
+
+<!-- landing section-->
+        <section id="landing-section" class="page-section active-section">
+            <div class="landing-grid">
+                
+<!-- left side: hero content -->
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        Interactive Web Game
+                    </div>
+                    <h1 class="hero-title">
+                        Can you read the <span class="gradient-text">machine's mind?</span>
+                    </h1>
+                    <p class="hero-description">
+                        Test your intuition in this sleek, modern number guessing game. Set your range, trust your gut, and beat the algorithm in just 3 attempts.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button onclick="startGameFlow()" class="btn btn-primary">
+                            <span>Play Now</span>
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        <button onclick="scrollToHowToPlay()" class="btn btn-secondary">
+                            <span>How to Play</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+
+<!-- the 3 stats -->
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Attempts</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Range</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">0</div>
+                            <div class="stat-label">Limits</div>
+                        </div>
+                    </div>
+                </div>
+
+<!-- right side: visual/preview -->
+                <div class="hero-visual">
+                    <div class="preview-card">
+                        <div class="preview-header">
+                            <div class="window-dots">
+                                <div class="dot red"></div>
+                                <div class="dot yellow"></div>
+                                <div class="dot green"></div>
+                            </div>
+                            <i class="fa-solid fa-gamepad preview-icon"></i>
+                        </div>
+                        <div class="preview-content">
+                            <div class="preview-line line-1"></div>
+                            <div class="preview-line line-2"></div>
+                            <div class="preview-grid">
+                                <div class="preview-box active">?</div>
+                                <div class="preview-box">?</div>
+                                <div class="preview-box">?</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glow-orb orb-top"></div>
+                    <div class="glow-orb orb-bottom"></div>
+                </div>
+            </div>
+
+<!-- how to play section -->
+            <div id="how-to-play" class="how-to-play-section">
+                <div class="section-header">
+                    <h2 class="section-title">How to <span class="gradient-text">Play</span></h2>
+                    <p class="section-subtitle">Master the game in three simple steps</p>
+                </div>
+
+                <div class="steps-grid">
+<!-- 1-->
+                    <div class="step-card">
+                        <div class="step-glow"></div>
+                        <div class="step-icon indigo">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+                        <div class="step-number">Step 01</div>
+                        <h3 class="step-title">Set the Range</h3>
+                        <p class="step-description">
+                            Choose your difficulty by setting the maximum number limit. The higher the number, the harder the challenge.
+                        </p>
+                    </div>
+
+<!-- 2 -->
+                    <div class="step-card">
+                        <div class="step-glow purple"></div>
+                        <div class="step-icon purple">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <div class="step-number purple-text">Step 02</div>
+                        <h3 class="step-title">Make Your Guess</h3>
+                        <p class="step-description">
+                            You have 3 attempts to guess the correct number. Enter your prediction and submit to see if you match the computer's choice.
+                        </p>
+                    </div>
+
+<!-- 3-->
+                    <div class="step-card">
+                        <div class="step-glow pink"></div>
+                        <div class="step-icon pink">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div class="step-number pink-text">Step 03</div>
+                        <h3 class="step-title">Win or Retry</h3>
+                        <p class="step-description">
+                            Guess correctly to trigger the victory celebration! Run out of attempts? The number is revealed and you can try again immediately.
+                        </p>
+                    </div>
+                </div>
+
+<!-- tips-->
+                <div class="tips-box">
+                    <div class="tips-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <div class="tips-content">
+                        <h4 class="tips-title">Pro Tip</h4>
+                        <p class="tips-text">
+                            Use the hints! After each wrong guess, the game tells you if your number was too high or too low. Use this information to narrow down your next attempt strategically.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- g section -->
+        <section id="game-section" class="page-section hidden-section game-section">
+            <div class="game-card">
+                <div class="game-accent-line"></div>
+
+                <div class="game-header">
+                    <div class="game-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h2 class="game-title">Mind <span class="gradient-text">Reader</span></h2>
+                    <p id="game-subtitle" class="game-subtitle">Set the difficulty to begin</p>
+                </div>
+
+<!-- 1 setup -->
+                <div id="setup-phase" class="game-phase animate-pop">
+                    <label class="input-label">Maximum Limit</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="max-limit-input" placeholder="e.g. ∞" min="1" max="100" class="game-input">
+                    </div>
+                    <button onclick="initGame()" class="btn btn-primary btn-full">
+                        Start Game
+                    </button>
+                </div>
+
+<!-- 2 gameplay -->
+                <div id="gameplay-phase" class="game-phase hidden">
+                    <div class="attempts-bar">
+                        <span class="attempts-label">Attempts Left</span>
+                        <div class="attempts-dots" id="attempts-container"></div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <input type="number" id="guess-input" placeholder="?" class="game-input guess-input">
+                    </div>
+
+                    <div id="feedback-msg" class="feedback-message"></div>
+
+                    <button onclick="submitGuess()" class="btn btn-white btn-full">
+                        Guess Number
+                    </button>
+                    
+                    <button onclick="resetGame()" class="btn btn-text">
+                        Give Up
+                    </button>
+                </div>
+
+<!-- 3 game over / win -->
+                <div id="result-phase" class="game-phase hidden text-center animate-pop">
+                    <div id="result-icon" class="result-icon">🏆</div>
+                    <h2 id="result-title" class="result-title">You Win!</h2>
+                    <p id="result-message" class="result-message">The number was 42.</p>
+                    
+                    <div class="result-buttons">
+                        <button onclick="resetGame()" class="btn btn-primary btn-full">
+                            Play Again
+                        </button>
+                        <button onclick="showSection('landing')" class="btn btn-text">
+                            Back to Home
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mind Reader Game. Built with modern web technologies.</p>
+        <p class="the-dev">The Developer:</p>
+        <p class="my-name-p">Jared C. Luzon</p>
+        <p>Email:</p><a class="for-my-email" href="mailto:jaredluzon84@gmail.com">jaredluzon84@gmail.com</a>
+    </footer>
+</body>
+<script src="../SCRIPT-FILE/script.js"></script>
+</html>
