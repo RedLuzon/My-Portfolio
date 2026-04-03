@@ -1,0 +1,138 @@
+{
+    "header": {
+        "name": "Red Luzon",
+        "tagline": "Full Stack Developer & UI Designer",
+        "profileImage": "../IMG/img.jpg",
+        "logo": "../IMG/logo.png"
+    },
+    "navigation": [
+        { "label": "Home", "href": "#home" },
+        { "label": "Skills", "href": "#skills" },
+        { "label": "Projects", "href": "#projects" },
+        { "label": "Services", "href": "#services" },
+        { "label": "Contact", "href": "#contact" }
+    ],
+    "hero": {
+        "welcomeMessage": "Hello, I'm Red Luzon",
+        "subtitle": "Crafting Digital Experiences",
+        "description": "I build modern, responsive, and user-friendly web applications using cutting-edge technologies. Specializing in Java, JavaScript, and modern CSS frameworks.",
+        "ctaButton": "View My Work",
+        "secondaryCta": "Contact Me",
+        "backgroundImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600"
+    },
+    "skills": [
+        {
+            "name": "Java",
+            "icon": "https://kimi-web-img.moonshot.cn/img/images.vexels.com/52e2311e6cc21aa636f631116b2f238f3db00a2e.png",
+            "level": 4,
+            "description": "Object-Oriented Programming & Backend Development"
+        },
+        {
+            "name": "JavaScript",
+            "icon": "https://kimi-web-img.moonshot.cn/img/upload.wikimedia.org/98437400366a3d6f8c57049cc0325d8c25032961.png",
+            "level": 5,
+            "description": "ES6+, DOM Manipulation & Modern Frameworks"
+        },
+        {
+            "name": "HTML5",
+            "icon": "https://kimi-web-img.moonshot.cn/img/upload.wikimedia.org/35b10f538035bc97ce4e6a0313bcefe96355c265.png",
+            "level": 5,
+            "description": "Semantic Markup, Accessibility & SEO"
+        },
+        {
+            "name": "CSS3",
+            "icon": "https://kimi-web-img.moonshot.cn/img/www.citypng.com/76965e2acf04977a37c802207d998c0ce00db9f4.png",
+            "level": 5,
+            "description": "Animations, Grid, Flexbox & Responsive Design"
+        },
+        {
+            "name": "Tailwind CSS",
+            "icon": "https://kimi-web-img.moonshot.cn/img/upload.wikimedia.org/71377a3ce8541a4d350c46a00ce2d72b99db19e3.png",
+            "level": 4,
+            "description": "Utility-First CSS Framework & Custom Config"
+        }
+    ],
+    "stats": [
+        { "value": "18+", "label": "Years Experience" },
+        { "value": "69+", "label": "Projects Completed" },
+        { "value": "10", "label": "Technologies Mastered" },
+        { "value": "101%", "label": "Commitment" }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "Guessing Number Game",
+            "description": "Test your intuition in this sleek, modern number guessing game. Set your range, trust your gut, and beat the algorithm in just 3 attempts. Features smooth animations and responsive design.",
+            "image": "../IMG/1.jpeg",
+            "link": "../../GUESSING_NUMBER/HTML-FILE/start_page.html",
+            "technologies": ["HTML", "JavaScript", "CSS"],
+            "category": "Game"
+        },
+        {
+            "id": 2,
+            "title": "Rock, Paper, Scissors",
+            "description": "Classic game reimagined with modern web technologies. Rock beats Scissors, Scissors beats Paper, Paper beats Rock. Features real-time score tracking and smooth transitions.",
+            "image": "../IMG/11.jpeg",
+            "link": "../../ROCK_PAPER_SCISSOR/HTML-FILE/start.html",
+            "technologies": ["HTML", "JavaScript", "CSS"],
+            "category": "Game"
+        },
+        {
+            "id": 3,
+            "title": "Slot Machine Game",
+            "description": "A fully functional slot machine with randomized outcomes. Match three identical fruits to hit the jackpot! Built with pure JavaScript and CSS animations.",
+            "image": "../IMG/111.jpeg",
+            "link": "../../SLOT-GAME/HTML-FILE/slot.html",
+            "technologies": ["HTML", "JavaScript", "CSS"],
+            "category": "Game"
+        }
+    ],
+    "services": {
+        "title": "My Services",
+        "subtitle": "Comprehensive web solutions tailored to your needs",
+        "items": [
+            {
+                "icon": "🎨",
+                "title": "Web Design",
+                "description": "Modern, responsive designs that captivate users and drive engagement. From wireframes to high-fidelity prototypes."
+            },
+            {
+                "icon": "💻",
+                "title": "Frontend Development",
+                "description": "Clean, efficient code using HTML, CSS, JavaScript, and Tailwind CSS. Pixel-perfect implementation of designs."
+            },
+            {
+                "icon": "⚙️",
+                "title": "Backend Development",
+                "description": "Robust server-side solutions using Java. RESTful APIs, database management, and application architecture."
+            },
+            {
+                "icon": "🚀",
+                "title": "Performance Optimization",
+                "description": "Speed up your website with code splitting, lazy loading, and best practices for Core Web Vitals."
+            }
+        ]
+    },
+    "footer": {
+        "copyright": "© 2026 Red Luzon. All rights reserved.",
+        "developer": "Designed & Developed with | Red Luzon",
+        "email": "luzonjared5@gmail.com",
+        "socials": [
+            {
+                "platform": "GitHub",
+                "url": "https://github.com/RedLuzon",
+                "icon": "GH"
+            },
+            {
+                "platform": "Instagram",
+                "url": "https://www.instagram.com/_redluzon__/",
+                "icon": "IG"
+            },
+            {
+                "platform": "Facebook",
+                "url": "https://web.facebook.com/jared.luzon",
+                "icon": "FB"
+            }
+        ]
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Red Luzon - Professional Web Developer Portfolio. Specializing in Java, JavaScript, HTML, CSS, and Tailwind CSS.">
+  <meta name="keywords" content="Web Developer, Java, JavaScript, HTML, CSS, Tailwind CSS, Portfolio">
+  <meta name="author" content="Red Luzon">
+  <title>Red Luzon | Professional Web Developer</title>
+  <link rel="stylesheet" href="../CSS_FILE/mycss.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="loader" id="loader">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">LOADING PORTFOLIO...</div>
+  </div>
+
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand" id="navBrand"></a>
+      <ul class="nav-menu" id="navMenu"></ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <header id="header" class="header-section">
+    <div class="header-container">
+      <div class="header-content">
+        <div class="logo-container" id="logoContainer"></div>
+        <div class="profile-section" id="profileSection"></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="hero-section">
+    <div class="hero-background" id="heroBackground"></div>
+    <div class="hero-content" id="heroContent"></div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <div class="section-header">
+      <span class="section-label">Expertise</span>
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-subtitle">Technologies and tools I use to bring ideas to life</p>
+    </div>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </section>
+
+  <section class="stats-section">
+    <div class="stats-grid" id="statsGrid"></div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="section-header">
+      <span class="section-label">Portfolio</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">A selection of my recent work and personal projects</p>
+    </div>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </section>
+
+  <section id="services" class="services-section">
+    <div class="section-header" id="servicesHeader"></div>
+    <div class="services-grid" id="servicesGrid"></div>
+  </section>
+
+  <section id="contact" class="contact-section" style="background: transparent; padding: 2rem 2rem 4rem 2rem;">
+    <div class="contact-enhanced">
+      <div class="contact-container">
+        <h2>Let's Work Together</h2>
+        <p>Have a project in mind? I'm always open to discussing new opportunities and creative ideas.</p>
+
+        <div class="comment-form-modern">
+          <div class="form-title-modern">
+          <span>Send a direct message</span>
+          </div>
+          <p>
+            Your message will be sent directly to the developer's email (luzonjared5@gmail.com).
+          </p>
+
+          <form id="enhancedMessageForm">
+            <div class="inline-row-modern">
+              <div class="input-group-modern">
+                <label for="senderName">Your name <span class="required-star">*</span></label>
+                <input type="text" id="senderName" name="senderName" placeholder="Jared Luzon" required>
+              </div>
+              <div class="input-group-modern">
+                <label for="senderEmail">Email address <span class="required-star">*</span></label>
+                <input type="email" id="senderEmail" name="senderEmail" placeholder="hello@example.com" required>
+              </div>
+            </div>
+            <div class="input-group-modern">
+              <label for="commentMessage">Your message / comment <span class="required-star">*</span></label>
+              <textarea id="commentMessage" name="commentMessage" placeholder="Tell me about your project, ideas, or just say hello! I'll get back to you soon..." required></textarea>
+              <small>I'll reply to the email address you provided.</small>
+            </div>
+            <button type="submit" class="send-message-btn-modern" id="sendMsgBtn">
+            Send Message to Developer
+            </button>
+            <div id="formStatus" class="status-message-modern" style="display: none;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer-section"></footer>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <span id="themeIcon">🌙</span>
+  </button>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+</body>
+<script src="../SCRIPT_FILE/home.js"></script>
+</html>
