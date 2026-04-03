@@ -1,4 +1,4 @@
-Red Luzon | Portfolio Website
+# My-Portfolio
 - A modern, responsive portfolio website showcasing web development projects and skills.
 - Live Demo: [https://redluzon.github.io/My-Portfolio/FINALS_ACTIVITY/HTML_FILE/home.html]
 
