@@ -1,7 +1,7 @@
 {
     "header": {
         "name": "Red Luzon",
-        "tagline": "Full Stack Developer & UI Designer",
+        "tagline": "Studying Full Stack Developer & UI Designing",
         "profileImage": "../IMG/img.jpg",
         "logo": "../IMG/logo.png"
     },
@@ -75,7 +75,7 @@
             "image": "../IMG/11.jpeg",
             "link": "../../ROCK_PAPER_SCISSOR/HTML-FILE/start.html",
             "technologies": ["HTML", "JavaScript", "CSS"],
-            "category": "Game"
+            "category": " Game"
         },
         {
             "id": 3,
@@ -110,6 +110,16 @@
                 "icon": "🚀",
                 "title": "Performance Optimization",
                 "description": "Speed up your website with code splitting, lazy loading, and best practices for Core Web Vitals."
+            },
+            {
+                "icon": "☁️",
+                "title": "Deployment and Hosting",
+                "description": "Set up your website online using platforms like GitHub Pages or cloud hosting. Fast, stable, and ready for users."
+            },
+            {
+                "icon": "🛒",
+                "title": "E-commerce Integration",
+                "description": "I Build online stores with product pages, cart systems, and checkout flow. Simple and easy for customers to use."
             }
         ]
     },
