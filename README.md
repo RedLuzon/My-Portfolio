@@ -1,6 +1,6 @@
 # My-Portfolio
 - A modern, responsive portfolio website showcasing web development projects and skills.
-- **Live Demo:** [https://redluzon.github.io/My--Portfolio/FINALS_ACTIVITY/HTML_FILE/homee.html]
+- **Live Demo:** [https://redluzon.github.io/My-Portfolio/FINALS_ACTIVITY/HTML_FILE/home.html]
 
 ### Features
 - Dark/Light theme toggle
